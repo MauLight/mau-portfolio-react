@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Stoke&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import "../src/styles/animation.css";
+@import "./components/games/styles/Battle.css";
+@import "./components/games/styles/ships.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PAPILLON";
+  src: url("./fonts/Papillon.otf");
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("./fonts/IBMPlexSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "MEXICA";
+  src: url("./fonts/mexica.ttf");
+}
+
+html {
+  scrollbar-width: thin;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+  background: #0e140e;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b5dac9;
+}
+
+.triangle {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 76px solid;
+}
+
+.triangle2 {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 62px solid;
+}
+
+.pics {
+  overflow-x: scroll;
+}
+
+.game {
+  background-image: url('./img/site-back.png');
+}
+
+.joy {
+  object-fit: cover !important;
+}
+
+.loading {
+  width: 1000px;
+}
+

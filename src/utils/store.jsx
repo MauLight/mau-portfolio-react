@@ -1,0 +1,7 @@
+export const store = {
+  Home_Section4_Text1: 'Watch the video lessons carefully designed to give you the concepts you need, consolidate you learning by reading texts, complete interactive activities and tests to earn points. Study the material at your own pace and return to the lessons to repeat the knowledge!',
+  Home_Section4_Text2: 'Participate in online meetings every Sunday lasting up to 2 hours to test your knowledge, resolve questions and perform practical exercises with other quest participants. Discuss your work, clear your doubts and get instant feedback!',
+  Home_Section4_Text3: 'Each week you’ll participate in special assignments according to the lesson plan, with the support of writing tools designed to incrementally help you write your best story. Download our mobile app to keep track your progress!',
+  Home_Section4_Text4: 'Practice writing and work on your story from the very first day. By constantly engaging with the craft, you will write a strong dramatic basis of your story, a logline, a synopsis, an outline, a completed first draft, as well as a pitch presentation.',
+  Home_Section4_Text5: 'Participate in additional educational modules for development as a person and a writer, such as our Growth mindset module. You can also take part in a reading and watching challenges to read 19 scripts and watch 19 movies.',
+}
