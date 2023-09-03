@@ -1,27 +1,51 @@
 .blog-item {
-    box-sizing: content-box;
-    display: inline-block;
-    position: relative;
-
+  box-sizing: content-box;
+  display: inline-block;
+  position: relative;
 }
 
 .blog-item:after {
-    box-sizing: content-box;
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  box-sizing: content-box;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .blog-item:hover:after {
+  box-sizing: content-box;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
-    box-sizing: content-box;
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.blog-item2 {
+  box-sizing: content-box;
+  display: inline-block;
+  position: relative;
+}
+
+.blog-item2:after {
+  box-sizing: content-box;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.blog-item2:hover:after {
+  box-sizing: content-box;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

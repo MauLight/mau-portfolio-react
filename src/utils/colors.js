@@ -1,5 +1,5 @@
 export const boxColor = [
-  '',
+  'black',
   'rgb(71 85 105)',
   'rgb(220 38 38)',
   'rgb(234 88 12)',

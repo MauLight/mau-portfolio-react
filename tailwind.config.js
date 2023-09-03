@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        site: 'url(\'./img/site-back.png\')',
+        site: 'url(\'./img/joyBook_02.png\')',
       },
       fontFamily: {
         primary: 'Josefin Sans',
@@ -13,7 +13,10 @@ module.exports = {
         zen: 'Zen Antique',
         papillon: ['PAPILLON', 'serif'],
         carbon: ['IBM', 'sans-serif'],
-        mexica: ['MEXICA', 'sans-serif'],
+        aston: ['ASTON', 'sans-serif'],
+        kunika: ['KUNIKA', 'sans-serif'],
+        disolve: ['DISOLVE', 'sans-serif'],
+        bergen: ['BERGEN', 'sans-serif'],
       }
     },
   },

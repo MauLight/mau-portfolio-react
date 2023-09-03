@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 
 import './index.css'
 
@@ -13,6 +13,7 @@ import { GraphQLWsLink } from '@apollo/client/link/subscriptions'
 import { createClient } from 'graphql-ws'
 
 const authLink = setContext((_, { headers }) => {
+  console.log('GET ITEM HERE')
   const token = localStorage.getItem('joybook-user-token')
   return {
     headers: {

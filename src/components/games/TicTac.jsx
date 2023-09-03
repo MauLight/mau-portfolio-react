@@ -229,34 +229,34 @@ function TicTac() {
   return (
     <div
       id='tictac'
-      className="w-full h-[700px] border-y-2 relative"
+      className="h-[500px] sm:h-[700px] border-y-2 relative"
       style={{ backgroundImage: `url(${bg_site})` }}>
-      <div className="w-[100vw] box-border overflow-hidden h-[700px] absolute z-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-95"></div>
-      <div className="Game absolute z-0 left-[15%] top-[15%]">
-        <div className="flex justify-center items-center gap-x-[200px]">
-          <div className='board rounded-md'>
+      <div className="w-[100vw] box-border overflow-hidden h-[500px] sm:h-[700px] absolute z-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-95"></div>
+      <div className="Game absolute z-0 left-[21%] min-[500px]:left-[20%] md:left-[15%] top-[15%]">
+        <div className="min-[200px]:max-md:flex-col flex xl:gap-x-[200px]">
+          <div className='board w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] xl:w-[500px] xl:h-[500px] bg-black border border-black flex flex-col justify-center items-center rounded-md mr-20'>
 
-            <div className='boardrow rounded-md'>
+            <div className='flex flex-row flex-[33%] bg-black w-[200px] sm:w-[350px] xl:w-[500px] rounded-md'>
               <Block val={board[0]} chooseBlock={() => { chooseBlock(0) }} />
               <Block val={board[1]} chooseBlock={() => { chooseBlock(1) }} />
               <Block val={board[2]} chooseBlock={() => { chooseBlock(2) }} />
             </div>
-            <div className='boardrow rounded-md'>
+            <div className='flex flex-row flex-[33%] bg-black w-[200px] sm:w-[350px] xl:w-[500px] rounded-md'>
               <Block val={board[3]} chooseBlock={() => { chooseBlock(3) }} />
               <Block val={board[4]} chooseBlock={() => { chooseBlock(4) }} />
               <Block val={board[5]} chooseBlock={() => { chooseBlock(5) }} />
             </div>
-            <div className='boardrow rounded-md'>
+            <div className='flex flex-row flex-[33%] bg-black w-[200px] sm:w-[350px] xl:w-[500px] rounded-md'>
               <Block val={board[6]} chooseBlock={() => { chooseBlock(6) }} />
               <Block val={board[7]} chooseBlock={() => { chooseBlock(7) }} />
               <Block val={board[8]} chooseBlock={() => { chooseBlock(8) }} />
             </div>
 
           </div>
-          <div className='flex flex-col w-[500px]'>
-            <h1 className='font-mexica text-7xl text-black'>{title}</h1>
+          <div className='board flex flex-col min-[200px]:max-lg:mt-10 w-screen md:w-[500px] md:mt-[200px]'>
+            <h1 className='font-kunika text-5xl md:text-7xl text-black'>{title}</h1>
 
-            <h1 className='font-carbon text-2xl'>
+            <h1 className='font-carbon text-md md:text-2xl'>
 
               <TypeAnimation sequence={[
                 'Start new game by pressing a block_', 3000,

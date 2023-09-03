@@ -1,9 +1,7 @@
 import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-
 import mau from '../img/mau.png'
-import contact_02 from '../img/contact_02.png'
 import { fadeInSmall } from '../variants'
 
 export const Contact = () => {
@@ -25,16 +23,16 @@ export const Contact = () => {
 
   return (
     <div
-      style={{ backgroundImage: `url(${contact_02})`, objectFit: 'cover' }}
+      style={{ backgroundImage: 'url(\'https://i.postimg.cc/BZypJ83d/contact-02.png\')', backgroundSize: 'cover' }}
       id='contact'
-      className='flex gap-x-10 min-h-[700px] w-screen border-y-2 border-white'
+      className='flex gap-x-10 min-h-[700px] border-y-2 border-white'
     >
       <motion.div
         variants={fadeInSmall('up', 0.2)}
         initial="hidden"
         whileInView={'show'}
         viewport={{ once: false, amount: 0.7 }}
-        className="flex justify-center items-center w-1/2"
+        className="hidden sm:flex justify-center items-center w-1/2"
       >
         <img src={mau} className='w-full h-auto' />
         <div className="border-l-2 w-2 h-[45%] py-5"></div>
@@ -44,11 +42,11 @@ export const Contact = () => {
         initial="hidden"
         whileInView={'show'}
         viewport={{ once: false, amount: 0.7 }}
-        className="flex flex-col justify-center items-center w-1/2"
+        className="flex flex-col justify-center items-center w-screen sm:w-1/2"
       >
         <form ref={form} onSubmit={submit}>
-          <div className="flex flex-col justify-start gap-y-2 w-[35vw]">
-            <h1 className='font-mexica text-white text-6xl my-5 text-start'>{'Let\'s work together.'}</h1>
+          <div className="flex flex-col justify-start gap-y-2 sm:w-[35vw] min-[200px]:max-sm:px-10">
+            <h1 className='font-mono tracking-tighter text-white text-4xl my-5 text-start'>{'Let\'s work together.'}</h1>
             <label className='font-carbon text-sm text-white' htmlFor='name'>Your name:</label>
             <input required className='rounded-r-full h-8 w-full text-white w-[40%]' type='text' id='name' name="user_name" />
             <label className='font-carbon text-sm text-white' htmlFor='email'>Your email:</label>
@@ -61,7 +59,7 @@ export const Contact = () => {
                 value="Send"
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-                className='font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-[#393939] hover:bg-white hover:text-[#9f56f4] active:bg-[#9f56f4] active:text-white'
+                className='font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-[#393939] hover:bg-white hover:text-[#9f56f4] active:bg-[#9f56f4] active:text-white transition-color duration-300'
               >submit</motion.button>
             </div>
           </div>

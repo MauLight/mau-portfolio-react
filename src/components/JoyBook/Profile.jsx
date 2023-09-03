@@ -86,6 +86,10 @@ export const Profile = ({ setError, setType, setToken }) => {
     )
   }
 
+  if (error) {
+    console.log(`Error: ${error.message}`)
+  }
+
   const user = data ? data.me : null
   console.log(user)
 
@@ -168,7 +172,7 @@ export const Profile = ({ setError, setType, setToken }) => {
   }
 
   return (
-    <div className="flex justify-center items-center flex-col min-w-[499px] h-[606px] text-black bg-white rounded-l-[15px] px-5 py-10 mb-2 ml-3 relative">
+    <div className="flex justify-center items-center flex-col min-[1200px]:min-w-[499px] min-[200px]:max-[1200px]:mt-10 h-[606px] text-black bg-white rounded-l-[15px] px-5 py-10 mb-2 min-[1200px]:ml-3 relative">
       <div className='absolute top-[7%] left-[84%] h-[100px] w-[100px] z-40'>
         <motion.div
           variants={fadeInSmall('down', 0.1)}
@@ -207,7 +211,7 @@ export const Profile = ({ setError, setType, setToken }) => {
         </motion.div>
       </div>
       <img className='h-[35%] w-full object-cover rounded-t-[15px]' src={cloudinaryWallImage ? cloudinaryWallImage : userInfo.wallpaper} />
-      <div className='absolute top-[26%] left-[40%] h-[100px] w-[100px] z-40'>
+      <div className='absolute top-[28%] min-[500px]:top-[27%] left-[37%] min-[500px]:left-[42%] md:left-[44%] lg:left-[45%] min-[1200px]:left-[40%] h-[100px] w-[100px] z-40'>
 
 
         <label>
@@ -223,7 +227,7 @@ export const Profile = ({ setError, setType, setToken }) => {
         </label>
 
       </div>
-      <img className='absolute top-[26%] left-[40%] h-[100px] w-[100px] object-cover rounded-full border-2 border-white' src={cloudinaryAvatarImage ? cloudinaryAvatarImage : userInfo.pic} />
+      <img className='absolute top-[28%] min-[500px]:top-[27%] left-[37%] min-[500px]:left-[42%] md:left-[44%] lg:left-[45%] min-[1200px]:left-[40%] h-[100px] w-[100px] object-cover rounded-full border-2 border-white' src={cloudinaryAvatarImage ? cloudinaryAvatarImage : userInfo.pic} />
       <h1 className='font-carbon text-4xl mt-[48px] mb-2'>{`{${user ? user.username : userInfo.username}}`}</h1>
       {
         changeBio ?
@@ -240,7 +244,7 @@ export const Profile = ({ setError, setType, setToken }) => {
           :
 
           (
-            <p className='font-carbon' onClick={() => setChangeBio(!changeBio)}>{bio.length > 0 ? bio : userInfo.bio}</p>
+            <p className='font-carbon text-[12px] md:text-[15px]' onClick={() => setChangeBio(!changeBio)}>{bio.length > 0 ? bio : userInfo.bio}</p>
           )
 
       }
@@ -251,17 +255,17 @@ export const Profile = ({ setError, setType, setToken }) => {
           !addPost ?
             (
               <>
-                <div className="flex justify-start items-center gap-x-2 w-full mb-3 mt-5">
-                  <label className='font-carbon mr-2'>Friends:</label>
+                <div className="flex justify-center sm:justify-start items-center gap-x-2 w-full mb-3 mt-5">
+                  <label className='hidden sm:flex font-carbon mr-2'>Friends:</label>
                   {
                     userInfo.friends.map(friend => <img key={friend.username} className='h-[40px] w-[40px] object-cover rounded-full border-2 border-black' src={friend.pic} />)
                   }
                 </div>
                 <div className='flex justify-between'>
-                  <label className='font-carbon'>Posts:</label>
+                  <label className='hidden sm:flexfont-carbon'>Posts:</label>
                   <ul className='px-2 py-3'>
                     {
-                      userInfo.posts.map(post => <li key={post.id} className='py-1 font-carbon text-sm'>{post.title}</li>)
+                      userInfo.posts.map(post => <li key={post.id} className='py-1 font-carbon text-[12px] sm:text-sm'>{post.title}</li>)
                     }
                   </ul>
                 </div>

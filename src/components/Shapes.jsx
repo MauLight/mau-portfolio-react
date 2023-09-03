@@ -19,7 +19,7 @@ export const Shapes = () => {
   console.log('color is: ', boxColor[ranNum])
 
   return (
-    <div id='interact' className={'flex justify-center gap-x-32 items-center border-y-2 h-[600px]'} style={{ backgroundColor: boxColor[ranNum] }}>
+    <div id='interact' className={'min-[320px]:max-sm:flex-col flex justify-center gap-x-32 items-center border-y-2 h-[600px]'} style={{ backgroundColor: boxColor[ranNum] }}>
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial="hidden"

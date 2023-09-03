@@ -48,14 +48,14 @@ export const Card = ({ id, title, author, img, body, likes, tags, lorem, setErro
       whileInView={'show'}
       viewport={{ once: false, amount: 0.7 }}
       key={id}
-      className='min-w-[35vw] h-[606px] object-contain object-center overflow-hidden text-black bg-white rounded-r-[15px] px-5 py-10'
+      className='min-w-[99vw] lg:min-w-[35vw] h-[606px] object-contain object-center overflow-hidden text-black bg-white rounded-r-[15px] px-5 py-10'
     >
-      <h1 className='font-carbon text-5xl mb-4'>{title}</h1>
+      <h1 className='font-carbon text-2xl lg:text-4xl mb-4'>{title}</h1>
       <div className="flex">
         <p className='mr-1 font-carbon'>by</p>
         <p className='font-papillon text-[18px]'>{author}</p>
       </div>
-      <img className='h-[50%] w-full object-cover' src={img} />
+      <img className='md:h-[60%] lg:h-[40%] xl:h-[50%] w-full object-cover mx-auto' src={img} />
       <div className='flex justify-between'>
         <div className="flex">
           {

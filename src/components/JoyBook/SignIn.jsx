@@ -22,7 +22,13 @@ export const SignIn = ({ setError, setSigned }) => {
 
   const submit = async (e) => {
     e.preventDefault()
-    console.log(validateEmail(password))
+
+    console.log(username.length)
+
+    if (username.length < 5) {
+      setError('Username must be at least five characters long.')
+      return
+    }
 
     if (!validateEmail(password)) {
       setError('Pasword must be minimum eight characters, at least one uppercase letter, one number and one special character.')
@@ -39,12 +45,12 @@ export const SignIn = ({ setError, setSigned }) => {
 
   return (
     <>
-      <div className="flex justify-center items-center flex-col gap-y-2 w-1/2 px-10">
+      <div className="flex justify-center items-center flex-col gap-y-2 h-[700px] lg:w-1/2 px-10">
         <div className='w-[300px] flex justify-center items-center mb-2'>
           <motion.h1
             whileHover={{ scale: 1.1 }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-            className='text-5xl font-papillon'>Sign-In</motion.h1>
+            className='text-5xl font-kunika'>Sign-In</motion.h1>
         </div>
         <div className='w-[300px]'>
           <label className='text-[14px]' htmlFor='username'>Username:</label>
@@ -69,7 +75,7 @@ export const SignIn = ({ setError, setSigned }) => {
         <div className="flex justify-center">
           <small className='text-carbon'>Already have an account? <button onClick={() => setSigned(true)} className='text-carbon decoration-solid'>Login</button></small>
         </div>
-        <div className='w-[300px] flex justify-center items-center mt-5'>
+        <div className='flex justify-center items-center mt-5'>
           <motion.button
             onClick={submit}
             whileHover={{ scale: 1.1 }}

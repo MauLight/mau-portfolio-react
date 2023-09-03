@@ -10,11 +10,11 @@ function Slider() {
     <div
       id='photography'
       style={{ backgroundImage: `url(${pics_bg})`, objectFit: 'cover' }}
-      className="w-full h-[700px] pt-10">
+      className="w-full h-[700px] pt-10 overflow-hidden">
       <motion.section
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 2, type: 'tween' }}
-        className="pics flex border-t-[8px] mt-32 border-[#0e140e]"
+        className="pics flex border-t-[8px] mt-0 min-[500px]:mt-32 border-[#0e140e]"
       >
         {
           !!pics && pics.map((pic, i) => (

@@ -1,11 +1,10 @@
 import React from 'react'
-import bg_image from '../../img/joyBook_01.png'
 
 export const Banner = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${bg_image})`, objectFit: 'cover' }}
-      className="joy flex w-full h-[696px] object-cover"
+      style={{ backgroundImage: 'url(\'https://i.postimg.cc/fbjqLMCY/joy-Book-01.png\')', backgroundSize: 'cover' }}
+      className="joy hidden min-[1200px]:flex w-full h-[696px]"
     >
     </div>
   )

@@ -20,8 +20,23 @@
 }
 
 @font-face {
-  font-family: "MEXICA";
-  src: url("./fonts/mexica.ttf");
+  font-family: "ASTON";
+  src: url("./fonts/Astonpoliz.otf");
+}
+
+@font-face {
+  font-family: "KUNIKA";
+  src: url("./fonts/Kunika-Regular.otf");
+}
+
+@font-face {
+  font-family: "DISOLVE";
+  src: url("./fonts/halfo.otf");
+}
+
+@font-face {
+  font-family: "BERGEN";
+  src: url("./fonts/bergen.otf");
 }
 
 html {
@@ -80,6 +95,10 @@ body {
   overflow-x: scroll;
 }
 
+.script {
+  overflow-y: scroll;
+}
+
 .game {
   background-image: url('./img/site-back.png');
 }
@@ -92,3 +111,7 @@ body {
   width: 1000px;
 }
 
+.glow {
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+  0 0 12px #6E00FF, 0 0 92px #6E00FF, 0 0 150px #6E00FF, 0 0 151px #6E00FF;
+}

@@ -1,14 +1,13 @@
 import React from 'react'
 import { VideoCard } from './VideoCard'
 import { videos } from '../../utils/videos'
-import film from '../../img/film.png'
 
 export const Grid = () => {
   return (
     <div
       id='movies'
-      className='flex flex-wrap w-full h-[1400px] items-center justify-center py-[100px]'
-      style={{ backgroundImage: `url(${film})`, objectFit: 'cover' }}
+      className='flex flex-wrap items-center justify-center py-[100px]'
+      style={{ backgroundImage: 'url(\'https://i.postimg.cc/C5fjRN09/film.png\')', backgroundSize: 'cover' }}
     >
       {
         videos.map(elem =>

@@ -13,9 +13,9 @@ const Nav = () => {
           smooth={true}
           spy={true}
           offset={-200}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <Home className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <Home className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='interact'
@@ -23,63 +23,63 @@ const Nav = () => {
           smooth={true}
           spy={true}
           offset={0}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <TouchInteraction className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <TouchInteraction className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='photography'
           activeClass='active'
           smooth={true}
           spy={true}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <Camera className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <Camera className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='joybook'
           activeClass='active'
           smooth={true}
           spy={true}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <Share className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <Share className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='movies'
           activeClass='active'
           smooth={true}
           spy={true}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <Mov className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <Mov className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='tictac'
           activeClass='active'
           smooth={true}
           spy={true}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <GameConsole className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <GameConsole className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='quest'
           activeClass='active'
           smooth={true}
           spy={true}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <Blog className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <Blog className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='contact'
           activeClass='active'
           smooth={true}
           spy={true}
-          className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
-          <Email className='hover:text-[#8b5cf6] transition-color' size={30} />
+          <Email className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
       </div>
     </div>

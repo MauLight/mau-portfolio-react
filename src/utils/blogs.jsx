@@ -4,6 +4,7 @@ import inLess_3 from '../img/inLess_3.mp4'
 import inLess_4 from '../img/inLess_4.mp4'
 import inLess_5 from '../img/inLess_5.mp4'
 import inLess_6 from '../img/inLess_6.mp4'
+import inLess_7 from '../img/inLess_7.mp4'
 
 export const blogs = [
   {
@@ -213,7 +214,7 @@ export const inLess = [
     pos: 4,
     title: 'THE MATRIX (1999) IN LESS THAN 5 MINUTES.',
     date: 'JULY 7, 2023',
-    video: inLess_4,
+    video: inLess_5,
     fade: 1.2,
     tag: 'IN_LESS'
   },
@@ -222,7 +223,7 @@ export const inLess = [
     pos: 5,
     title: 'TWISTER (1996) IN LESS THAN 3 MINUTES.',
     date: 'MAY 24, 2023',
-    video: inLess_5,
+    video: inLess_4,
     fade: 1.2,
     tag: 'IN_LESS'
   },
@@ -232,6 +233,15 @@ export const inLess = [
     title: 'INDEPENDENCE DAY (1996) IN LESS THAN 2 MINUTES.',
     date: 'MAY 16, 2023',
     video: inLess_6,
+    fade: 1.2,
+    tag: 'IN_LESS'
+  },
+  {
+    id: 'G7',
+    pos: 7,
+    title: 'FINAL FANTASY VII IN LESS THAN 30 MINUTES.',
+    date: 'MAY 16, 2023',
+    video: inLess_7,
     fade: 1.2,
     tag: 'IN_LESS'
   },
@@ -260,7 +270,7 @@ export const screenplays = [
     id: 'B2',
     pos: 2,
     title: 'HUNGER.',
-    logline: "A judgmental pre-law student faces his girlfriend's disappearance while accepting that his parents eat human flesh for sport",
+    logline: 'A judgmental pre-law student faces his girlfriend\'s disappearance while accepting that his parents eat human flesh for sport',
     genres: [
       'THRILLER', 'SUSPENSE', 'DRAMEDY'
     ],

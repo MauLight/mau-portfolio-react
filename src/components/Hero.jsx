@@ -29,23 +29,23 @@ function Home_Hero() {
           viewport={{ once: false, amount: 0.7 }}
           className="absolute top-[42%] left-[5%]"
         >
-          <h1 className='text-white font-mexica text-2xl md:text-4xl'>Hi there!</h1>
+          <h1 className='text-white font-carbon text-lg sm:text-2xl md:text-4xl'>Hi there!</h1>
         </motion.div>
         <motion.div
-          variants={fadeIn('up', 0.2)}
+          variants={fadeIn('up', 0.5)}
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.7 }}
-          className="absolute top-[48%] left-[6%]"
+          className="absolute top-[48%] left-[6%] min-[450px]:left-[5%]"
         >
-          <h1 className='text-white font-mexica text-8xl md:text-8xl'>I am M. LIGHT</h1>
+          <h1 className='glow text-white font-kunika text-6xl sm:text-8xl md:text-[120px]'>I am M.LIGHT</h1>
         </motion.div>
         <motion.div
           variants={fadeIn('up', 0.7)}
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.7 }}
-          className="absolute top-[60%] left-[36%]"
+          className="absolute top-[57%] min-[450px]:top-[64%] left-[12%] min-[450px]:left-[46%]"
         >
           <h1 className='text-black font-carbon text-2xl md:text-3xl' >{'I am a '}<b>
             <TypeAnimation sequence={[

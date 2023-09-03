@@ -77,7 +77,7 @@ export const JoyBookIndex = () => {
   }
 
   return (
-    <div id='joybook' className={'flex justify-center items-center border-y-2 h-[700px] relative'}>
+    <div id='joybook' className={'min-[1200px]:flex justify-center items-center border-y-2 relative'}>
       <div className="absolute top-[10%] z-40">
         <Notification errorMessage={errorMessage} type={type} />
       </div>
@@ -101,7 +101,7 @@ export const JoyBookIndex = () => {
                     <JoyForm setToken={setToken} setError={notify} setSigned={setSigned} />
                   )
               }
-              <div className="border-l-2 w-2 h-[85%] py-5"></div>
+              <div className="hidden min-[1200px]:flex border-l-2 w-2 h-[400px] py-5"></div>
               <Banner />
             </>
           )

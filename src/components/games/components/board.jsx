@@ -16,7 +16,7 @@ export const Board = (props) => {
   const [shipLength, setShipLength] = useState('')
   const [angle, setAngle] = useState(0)
   const [isHorizontal, setIsHorizontal] = useState(true)
-  const [info, setInfo] = useState('BATTLESHIP.')
+  const [info, setInfo] = useState('Battleship.')
   const [shipCount, setShipCount] = useState(null)
   const [shipsNum, setShipsNum] = useState(0)
   const [winner, setWinner] = useState(false)
@@ -42,12 +42,16 @@ export const Board = (props) => {
 
 
     const handleDragStart = (e) => {
-      if (shipsNum < 5) {
-        setShipLength(parseInt(e.target.id))
-      }
-      else {
-        return
-      }
+
+      setTimeout(() => {
+        if (shipsNum < 5) {
+          setShipLength(parseInt(e.target.id))
+        }
+        else {
+          return
+        }
+      }, 10)
+
     }
 
     const shipsArr = [
@@ -134,7 +138,6 @@ export const Board = (props) => {
       }
 
     }
-    //console.log(aiBoard);
     setEnemyBoard(aiBoard)
 
     let aux = 0 //Number of blocks used by the AI
@@ -161,8 +164,6 @@ export const Board = (props) => {
           emptyBlocks.push(i)
         }
       }
-
-      console.log(emptyBlocks)
 
       let randomNumber = Math.floor(Math.random() * emptyBlocks.length)
 
@@ -201,10 +202,11 @@ export const Board = (props) => {
       }
 
     })
-    //console.log(playerBoard);
     setEnemyBoard(playerBoard)
 
-    if (!winner) {
+    const didWin = checkWinner()
+
+    if (!didWin) {
       setTimeout(() => setInfo('AI IS THINKING...'), 2000)
       setHalt(true)
       setTimeout(() => AIPlay(board), 3000)
@@ -215,6 +217,26 @@ export const Board = (props) => {
       return
     }
 
+  }
+
+  const checkWinner = () => {
+
+    let hits = 0
+    for (let hit of enemyBoard) {
+      if (hit === 3) {
+        hits += 1
+      }
+    }
+
+    if (hits === shipCount - 1) { //If number of HITS equals number of Blocks used by AI, player wins
+      setInfo('YOU WIN!')
+      setEnemyBoard(gameBoard)
+      setBoard(gameBoard)
+      setWinner(true)
+      setShipsNum(0)
+      return true
+    }
+    return false
   }
 
   const handleDragOver = (e) => {
@@ -268,28 +290,25 @@ export const Board = (props) => {
   }
 
   useEffect(() => {
-    let hits = 0
-    for (let hit of enemyBoard) {
-      if (hit === 3) {
-        hits += 1
-      }
+
+    if (winner) {
+      setTimeout(() => {
+        setInfo('Battleship.')
+      }, 3000)
+      setTimeout(() => {
+        handleStart()
+      }, 1000)
     }
 
-    if (hits === shipCount) { //If number of HITS equals number of Blocks used by AI, player wins
-      setInfo('YOU WIN!')
-      setEnemyBoard(gameBoard)
-      setBoard(gameBoard)
-      setWinner(true)
-    }
-  }, [board, enemyBoard])
+  }, [winner])
 
   return (
     <div
       className="container"
     >
-      <div className="absolute z-40 title my-3">
+      <div className="absolute z-40 left-[1%] title my-3">
         <div className="flex flex-col justify-center items-center w-screen">
-          <h1 className='font-mexica text-5xl text-black'>{info}</h1>
+          <h1 className='font-kunika text-6xl text-black'>{info}</h1>
           <div className="board-users flex gap-x-24 justify-center">
             <h4 className='font-carbon text-2xl'>Your Board</h4>
             <h4 className='font-carbon text-2xl'>AI Board</h4>
