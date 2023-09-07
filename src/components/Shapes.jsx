@@ -5,7 +5,7 @@ import { boxColor } from '../utils/colors'
 
 export const Shapes = () => {
 
-  const [ranNum, setRanNum] = useState(0)
+  const [ranNum, setRanNum] = useState(boxColor.length - 1)
 
   const randomSeed = () => {
     let ranInt = Math.floor(Math.random() * boxColor.length)

@@ -28,15 +28,6 @@ const Nav = () => {
           <TouchInteraction className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
-          to='photography'
-          activeClass='active'
-          smooth={true}
-          spy={true}
-          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
-        >
-          <Camera className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
-        </Link>
-        <Link
           to='joybook'
           activeClass='active'
           smooth={true}
@@ -44,6 +35,15 @@ const Nav = () => {
           className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
         >
           <Share className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
+        </Link>
+        <Link
+          to='photography'
+          activeClass='active'
+          smooth={true}
+          spy={true}
+          className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
+        >
+          <Camera className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
         </Link>
         <Link
           to='movies'

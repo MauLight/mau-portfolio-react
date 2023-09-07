@@ -16,8 +16,8 @@ export const Landing = () => {
       <Home_Hero />
       <Nav />
       <Shapes />
-      <Slider />
       <JoyBookIndex />
+      <Slider />
       <Grid />
       <TicTac />
       <Battleship />

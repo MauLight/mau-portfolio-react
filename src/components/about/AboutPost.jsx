@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { videos1 } from '../../utils/videos'
+import { videos2 } from '../../utils/videos'
 
-export const FilmsPost = ({ filmsId }) => {
+export const AboutPost = ({ aboutId }) => {
 
   const [dark, setDark] = useState(false)
 
-  const filmsFilter = videos1.filter(elem => elem.id === filmsId)
+  const filmsFilter = videos2.filter(elem => elem.id === aboutId)
 
   return (
     <>

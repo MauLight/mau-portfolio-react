@@ -1,6 +1,6 @@
 import React from 'react'
 import { VideoCard } from './VideoCard'
-import { videos } from '../../utils/videos'
+import { videos1 } from '../../utils/videos'
 
 export const Grid = () => {
   return (
@@ -10,7 +10,7 @@ export const Grid = () => {
       style={{ backgroundImage: 'url(\'https://i.postimg.cc/C5fjRN09/film.png\')', backgroundSize: 'cover' }}
     >
       {
-        videos.map(elem =>
+        videos1.map(elem =>
           <VideoCard
             key={elem.id}
             image={elem.image}

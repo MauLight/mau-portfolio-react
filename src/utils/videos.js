@@ -8,7 +8,7 @@ import entity from '../img/entity.mp4'
 import jackal from '../img/jackal.mp4'
 import halcyon from '../img/halcyon.mp4'
 
-export const videos = [
+export const videos1 = [
   {
     id: 'a1',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
@@ -81,4 +81,32 @@ export const videos = [
     color: 'rgb(8 145 178)',
     genre: 'Sci-fi'
   },
+]
+
+export const videos2 = [
+  {
+    id: 'a1',
+    image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
+    video: 'https://res.cloudinary.com/maulight/video/upload/v1694089987/umuz9nskw6brdyyitfwr.mp4',
+    title: 'Love is Forever',
+    color: 'rgb(16 185 129)',
+    genre: 'Promotion'
+  },
+  {
+    id: 'b2',
+    image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
+    video: 'https://res.cloudinary.com/maulight/video/upload/v1694090790/rx1f6oim9bm3sb6kcqho.mp4',
+    title: 'Minning Together',
+    color: 'rgb(234 179 8)',
+    genre: 'Documentary'
+  },
+  {
+    id: 'c3',
+    image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
+    video: 'https://res.cloudinary.com/maulight/video/upload/v1694091505/fbxpuxytzdsfcecrqlng.mp4',
+    title: 'All Tomorrows',
+    color: 'rgb(129 140 248)',
+    genre: 'Music'
+  },
+
 ]

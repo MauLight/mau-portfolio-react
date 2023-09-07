@@ -1,4 +1,4 @@
-export const pics = [
+export const pics1 = [
   {
     img: 'https://i.postimg.cc/W3g13zjw/stream-4.jpg',
     title: 'Melancholy waters',
@@ -93,7 +93,11 @@ export const pics = [
     img: 'https://i.postimg.cc/PJx0nVhc/Mau-Luz-NO.18.jpg',
     title: 'Wonderland',
     tags: ['mood', 'urban']
-  },
+  }
+]
+
+export const pics2 = [
+
   {
     img: 'https://i.postimg.cc/htgG1ChR/142.jpg',
     title: 'Gargoyles',
@@ -188,6 +192,5 @@ export const pics = [
     img: 'https://i.postimg.cc/ZqqNCrDF/I-am-77.jpg',
     title: 'Moonlight',
     tags: ['abstract', 'mood', 'fantasy']
-  },
-
+  }
 ]

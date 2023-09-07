@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ImageHolder } from './ImageHolder'
-import { pics } from '../../utils/pics'
+import { pics1, pics2 } from '../../utils/pics'
 import pics_bg from '../../img/pics-bg.png'
 
 function Slider() {
@@ -10,14 +10,33 @@ function Slider() {
     <div
       id='photography'
       style={{ backgroundImage: `url(${pics_bg})`, objectFit: 'cover' }}
-      className="w-full h-[700px] pt-10 overflow-hidden">
+      className="w-full py-10 overflow-hidden flex flex-col object-cover">
       <motion.section
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 2, type: 'tween' }}
         className="pics flex border-t-[8px] mt-0 min-[500px]:mt-32 border-[#0e140e]"
       >
         {
-          !!pics && pics.map((pic, i) => (
+          !!pics1 && pics1.map((pic, i) => (
+            <div key={i}>
+
+              <ImageHolder
+                id={i}
+                title={pic.title}
+                logline={pic.tags}
+                img={pic.img} />
+
+            </div>
+          ))
+        }
+      </motion.section>
+      <motion.section
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 2, type: 'tween' }}
+        className="pics flex border-t-[8px] mt-0 min-[500px]:mt-32 border-[#0e140e]"
+      >
+        {
+          !!pics2 && pics2.reverse().map((pic, i) => (
             <div key={i}>
 
               <ImageHolder
