@@ -14,6 +14,7 @@ import { Contact } from './components/Contact'
 import { Navbar } from './components/Navbar'
 import Screenplay from './views/Screenplay'
 import { AboutPost } from './components/about/AboutPost'
+import { Screenwriting } from './views/Screenwriting'
 
 const App = () => {
 
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />
             <Route path="/screenplay" element={<Screenplay />} />
+            <Route path="/screenwriting" element={<Screenwriting />} />
             <Route path="/films/:id" element={<FilmsPost filmsId={filmsId} />} />
             <Route path="/reel/:id" element={<AboutPost aboutId={aboutId} />} />
             <Route path="/blogs/:id" element={<BlogPost blogId={blogId} />} />

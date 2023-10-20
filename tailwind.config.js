@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         site: 'url(\'./img/joyBook_02.png\')',
+        site2: 'url(\'./img/bg-site.png\')',
       },
       fontFamily: {
         primary: 'Josefin Sans',

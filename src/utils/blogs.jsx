@@ -254,7 +254,24 @@ export const screenplays = [
   {
     id: 'A1',
     pos: 1,
+    title: 'THEM.',
+    type: 'feature',
+    logline: 'After two years missing, a traumatized survivor has to choose between leaving the country to stay alive or giving testimony in the trial against his alleged murderer, to unveil a conspiracy between the government and otherworldly beings.',
+    genres: [
+      'HORROR', 'SCI-FI', 'DRAMA'
+    ],
+    pdf: '',
+    date: 'COMING SOON...',
+    rounded: 'rounded-l-full',
+    img: 'https://i.postimg.cc/DydzwSZW/Them.jpg',
+    fade: 0.4,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'B2',
+    pos: 2,
     title: 'REBEL SERAPHIM.',
+    type: 'feature',
     logline: 'An orphan finds love and family among the soldiers willing to defend humanity against the wrath of God.',
     genres: [
       'SCI-FI', 'ACTION', 'FANTASY'
@@ -267,10 +284,11 @@ export const screenplays = [
     tag: 'SCREENPLAYS'
   },
   {
-    id: 'B2',
-    pos: 2,
+    id: 'C3',
+    pos: 3,
     title: 'HUNGER.',
-    logline: 'A judgmental pre-law student faces his girlfriend\'s disappearance while accepting that his parents eat human flesh for sport',
+    type: 'feature',
+    logline: 'A judgmental pre-law student faces his girlfriend\'s disappearance while accepting that his parents eat human flesh for sport.',
     genres: [
       'THRILLER', 'SUSPENSE', 'DRAMEDY'
     ],
@@ -282,10 +300,11 @@ export const screenplays = [
     tag: 'SCREENPLAYS'
   },
   {
-    id: 'C3',
-    pos: 3,
+    id: 'D4',
+    pos: 4,
     title: 'SPEED OF LIGHT.',
-    logline: 'An amateur driver beats the speed world record for a chance to race in the championship and to prove the value of his life.',
+    type: 'feature',
+    logline: 'Driving a car fueled by emotions, an amateur driver beats the speed world record for a chance to race in the championship and to prove the value of his life.',
     genres: [
       'ACTION', 'ADVENTURE', 'RACING'
     ],
@@ -293,6 +312,486 @@ export const screenplays = [
     date: 'JANUARY 08, 2023',
     rounded: 'rounded-r-full',
     img: 'https://i.postimg.cc/9fNdHDSR/script-3.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'E5',
+    pos: 5,
+    title: 'THE FORBIDDEN.',
+    type: 'feature',
+    logline: 'Young servant Skyler needs to look beyond guilt and the binding walls around the community to face the punishment of God and find the key to humanity\'s liberation.',
+    genres: [
+      'HORROR', 'DRAMA', 'SUSPENSE'
+    ],
+    pdf: 'https://drive.google.com/file/d/1-BF5KVCyJcKNOabTs-1TzRo0lMe6TsZ2/preview',
+    date: 'JULY 08, 2023',
+    rounded: 'rounded-l-full',
+    img: 'https://i.postimg.cc/MGbKcynh/the-forbidden.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'F6',
+    pos: 6,
+    title: 'HOPE.',
+    type: 'feature',
+    logline: 'An idealistic woman experiences the abuses of a fascist government and finds the courage to meet the fate the universe has put in font of her.',
+    genres: [
+      'HORROR', 'DRAMA', 'SCI-FI'
+    ],
+    pdf: 'https://drive.google.com/file/d/1GsQyZ8Uy8BozkPuU11ZNkcxtlorLubtg/preview',
+    date: 'NOVEMBER 10, 2022',
+    rounded: 'rounded-r-full',
+    img: 'https://i.postimg.cc/0QqYqg37/Hope.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'G7',
+    pos: 7,
+    title: 'NOT A MEMORY.',
+    type: 'feature',
+    logline: 'A grieving father risks his life to save a girl from a group of people hell-bent in fixing a broken world, to find peace after a major loss.',
+    genres: [
+      'ACTION', 'DRAMA', 'HORROR'
+    ],
+    pdf: 'https://drive.google.com/file/d/1nbGWx-4TnFmwsMogj6kyxnqbSlyqlFXm/preview',
+    date: 'AUGUST 22, 2022',
+    rounded: 'rounded-l-full',
+    img: 'https://i.postimg.cc/2jLPjnVG/not-a-memory.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'H8',
+    pos: 8,
+    title: 'SIN.',
+    type: 'feature',
+    logline: 'Facing judgement from the church, mother and daughter seek the aid of the demon possesing them.',
+    genres: [
+      'HORROR', 'DRAMA', 'SUSPENSE'
+    ],
+    pdf: 'https://drive.google.com/file/d/1M5ybcIhQUnRlXK0M0s5g78GBfUXOa-u-/preview',
+    date: 'JUNE 10, 2022',
+    rounded: 'rounded-r-full',
+    img: 'https://i.postimg.cc/7hy31vDK/Sin.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'I9',
+    pos: 9,
+    title: 'ECHOES.',
+    type: 'feature',
+    logline: 'A young scientist uses cutting edge technology to enter the comatose mind of the love of her life, to make a copy of him before losing him forever.',
+    genres: [
+      'SCI-FI', 'DRAMA', 'ACTION'
+    ],
+    pdf: 'https://drive.google.com/file/d/1FMWK-oSweVP19tycgakQhPfRk4xTgC4s/preview',
+    date: 'JUNE 10, 2022',
+    rounded: 'rounded-l-full',
+    img: 'https://i.postimg.cc/vBps3zSq/Echoes-Front.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'J10',
+    pos: 10,
+    title: 'THE ANTICHRIST.',
+    type: 'feature',
+    logline: 'The lives of a slave,  a prisoner and a puppet intertwine by the hand of god as their actions trigger the end of the world.',
+    genres: [
+      'HORROR', 'DRAMA', 'MYSTERY'
+    ],
+    pdf: 'https://drive.google.com/file/d/10mEUJp3TLGOcgqoXei83py2nlf0qwlkM/preview',
+    date: 'DECEMBER 03, 2021',
+    rounded: 'rounded-r-full',
+    img: 'https://wakeupmau.files.wordpress.com/2022/02/tumblr_54f640b7bf0cf0ea81e3549e5106ee73_8fd5932a_1280.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'K11',
+    pos: 11,
+    title: 'THE GOLDEN CREW.',
+    type: 'tv',
+    logline: 'A low-class genius wins a scholarship to the most prestigious film-school in the world and taps into the fountain of imagination to lead his film-crew to win the ultimate filmmakers\' award.',
+    genres: [
+      'DRAMA', 'COMEDY', 'ACTION'
+    ],
+    pdf: 'https://drive.google.com/file/d/1w8Uz3Ojuc0fZ2opZ1t94Tm2LQy88_qSf/preview',
+    date: 'MAY 23, 2022',
+    rounded: 'rounded-l-full',
+    img: 'https://i.postimg.cc/DwVFKnFC/The-golden-crew.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'L12',
+    pos: 12,
+    title: 'MARGO\'S SHADOWS.',
+    type: 'tv',
+    logline: 'Through atabistic magic, shy Margo steals her boyfriend\'s shadow to become the number one reporter in the city, unwillingly unleashing a powerful curse that could be the end of everything.',
+    genres: [
+      'DRAMA', 'COMEDY', 'FANTASY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1USecKBUwDhzFKspHyc0XQShaE7UnQwLe/preview',
+    date: 'MAY 04, 2022',
+    rounded: 'rounded-r-full',
+    img: 'https://i.postimg.cc/59KQ3jvQ/Margo-s-shadows-I.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'M13',
+    pos: 13,
+    title: 'THE FALSE MESSIAH.',
+    type: 'tv',
+    logline: '10 years after Kate’s disappearance, her lonely sister Annie joins a new social network called Samsara, where participants share imaginary worlds where they can meet and, in her rise to popularity, she will have to face a conspiracy to destroy all reality.',
+    genres: [
+      'SCI-FI', 'ACTION', 'FANTASY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1EtvezsFmO0wqle5fF85sr2owVq8nQJ8d/preview',
+    date: 'MAY 04, 2022',
+    rounded: 'rounded-l-full',
+    img: 'https://i.postimg.cc/t4cHvQk5/The-False-Messiah-Front2.jpg',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'N14',
+    pos: 14,
+    title: 'THE MIRACLE.',
+    type: 'short',
+    logline: 'After having a nervous breakdown, a man has visions that bring him back to the home he left behind and to the possibility of a serious mental disorder, but also to fulfil his destiny.',
+    genres: [
+      'DRAMA'
+    ],
+    pdf: 'https://drive.google.com/file/d/1fTZdJiHBmO1UKrZ1TRoQ2J8RZBRZtOwQ/preview',
+    date: 'MAY 04, 2022',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'O15',
+    pos: 15,
+    title: '99 LIVES',
+    type: 'short',
+    logline: 'To save the love of his life, a guilty man offers to free 99 people from suffering and live all the years he takes from them.',
+    genres: [
+      'DRAMA', 'ACTION', 'FANTASY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1GdiL4uwZr5B23yIKWpDjF0yibv0iAOWj/preview',
+    date: 'MARCH 08, 2022',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'P16',
+    pos: 16,
+    title: 'LOTUS',
+    type: 'short',
+    logline: 'The first self-aware A.I. struggles with the realization he\'s the reincarnation of a man who gave his life for love, a long time ago.',
+    genres: [
+      'SCI-FI', 'ACTION', 'DRAMA'
+    ],
+    pdf: 'https://drive.google.com/file/d/16r4nyZPi3yb7lYRwHJCUwUWBKHFudDCV/preview',
+    date: 'FEBRUARY 02, 2022',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'Q17',
+    pos: 17,
+    title: 'THE END OF TIME',
+    type: 'short',
+    logline: 'An astronaut in a mission to save the Earth from extintion falls into an anomaly in space and discovers a hidden truth about the universe that could offer a solution, but the price is the love of his life.',
+    genres: [
+      'SCI-FI', 'DRAMA'
+    ],
+    pdf: 'https://drive.google.com/file/d/1t8LsJT3BO2BUwZ-PLuW_XsR32raFosqy/preview',
+    date: 'DECEMBER 18, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'R18',
+    pos: 18,
+    title: 'THE ART OF FIGHTING',
+    type: 'short',
+    logline: 'A lost woman leaves her remaining family behind to finish her martial arts path, finding the strength she needs to face the most important battle of her life.',
+    genres: [
+      'ACTION', 'DRAMA', 'COMEDY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1fcdL5hfaO1aO_2jFTp0eMSN23fxRYKm4/preview',
+    date: 'DECEMBER 08, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'O19',
+    pos: 19,
+    title: 'STREET FIGHTER II EXPRESS',
+    type: 'short',
+    logline: 'After committing to a date he can’t afford, an Uber driver takes a gamer boy and his beloved dog to the arcades and in the process regains the strength to follow his dreams.',
+    genres: [
+      'DRAMA', 'COMEDY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1NSb_WbS56RoQDKYGZVzuyvtACwBKTtQU/preview',
+    date: 'NOVEMBER 30, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'P20',
+    pos: 20,
+    title: 'SELF',
+    type: 'short',
+    logline: 'In a world where people can\'t dream anymore, an innocent person dreams about a sign from above, finding herself and regaining hope for everyone.',
+    genres: [
+      'DRAMA', 'SCI-FI'
+    ],
+    pdf: 'https://drive.google.com/file/d/1F7ZGr5bIqkajfTfW5j7D2Rajv_Oqo05U/preview',
+    date: 'NOVEMBER 24, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'Q21',
+    pos: 21,
+    title: 'DAYDREAMER',
+    type: 'tv',
+    logline: 'Elliot has the ability to wake up in dreams, a place where he fights nightmares trying to control humankind destiny.',
+    genres: [
+      'ACTION', 'SCI-FI', 'FANTASY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1gBcgylZzs-a_kDSCcBc_LLWx97lqJ_sM/preview',
+    date: 'OCTOBER 07, 2021',
+    rounded: 'rounded-r-full',
+    img: 'https://i.postimg.cc/8c9Cc98H/daydreamer.png',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'R22',
+    pos: 22,
+    title: 'YOUARE[NOT]FREE',
+    type: 'short',
+    logline: 'After hearing a false promise, a boy complies with the rules of a cruel world until he realizes fear kept him from disobeying.',
+    genres: [
+      'ACTION', 'DRAMA', 'WAR'
+    ],
+    pdf: 'https://drive.google.com/file/d/1dEGu3B0TryrfhRef536gbPaKeBgxWbm_/preview',
+    date: 'SEPTEMBER 11, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'T23',
+    pos: 23,
+    title: 'THE REASON WE FIGHT',
+    type: 'short',
+    logline: 'Pursued by an assassin, a deserted soldier must find his way home, only to realize that he has brought the war with him.',
+    genres: [
+      'ACTION', 'DRAMA', 'WAR'
+    ],
+    pdf: 'https://drive.google.com/file/d/1gyuCzDNk3c4Ix42uL8cSsg85v2Mx_JvK/preview',
+    date: 'SEPTEMBER 09, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'U24',
+    pos: 24,
+    title: 'PAY THE DEBT!',
+    type: 'short',
+    logline: 'A man\'s pursuit of revenge will become the payment for his own sins.',
+    genres: [
+      'ACTION', 'DRAMA', 'COMEDY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1JHT0PgaRbnIFXTBWB6YaQsuAHwqUQGI-/preview',
+    date: 'AUGUST 31, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'V25',
+    pos: 25,
+    title: 'DAMNATION',
+    type: 'short',
+    logline: 'After desecrating a place of offering, a man is marked with a curse that leads him to destroy everything he was looking for.',
+    genres: [
+      'HORROR', 'DRAMA', 'SUPERNATURAL'
+    ],
+    pdf: 'https://drive.google.com/file/d/1w_ZNn8r7o0ok8YsxLqJuK78WaaHz0wzh/preview',
+    date: 'JUNE 11, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'W26',
+    pos: 26,
+    title: 'THE TIME OF THE BUTTERFLIES',
+    type: 'short',
+    logline: 'Through the butterfly effect, the rage of an abused child causes the storm that transforms into his revenge against the person who abused him in the past.',
+    genres: [
+      'DRAMA', 'WAR'
+    ],
+    pdf: 'https://drive.google.com/file/d/1njsGz40VdZZUeNJygjluWaVnpKfNEoQm/preview',
+    date: 'JUNE 04, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'X27',
+    pos: 27,
+    title: 'HALCYON DAYS',
+    type: 'short',
+    logline: 'After causing the destruction of his family, a guilty man goes through an ordeal to decide if life is still worth living.',
+    genres: [
+      'DRAMA', 'ACTION', 'SCI-FI'
+    ],
+    pdf: 'https://drive.google.com/file/d/1XdbrMBqpSaHYR9IHHLMSMcQsDVU4tLKZ/preview',
+    date: 'MAY 27, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'Y28',
+    pos: 28,
+    title: 'BAPTISM',
+    type: 'short',
+    logline: 'During the biblical rapture, a prostitute finds a way to overcome her lifelong fear and becomes a saint.',
+    genres: [
+      'DRAMA', 'SUPERNATURAL'
+    ],
+    pdf: 'https://drive.google.com/file/d/10ViSJuoiag3PnqLQgjoVT_IKbMnXDWPa/preview',
+    date: 'MAY 20, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'Z29',
+    pos: 29,
+    title: 'THE PLACE OF THE HEART',
+    type: 'short',
+    logline: 'After meeting on a blind date, Elliot and Sofia revisit the club where they first met several times over the course of their relationship in an effort to protect the love that binds them.',
+    genres: [
+      'DRAMA', 'ROMANCE'
+    ],
+    pdf: 'https://drive.google.com/file/d/1TYi6RNtz_bCPazI8is8jw8q10pRlcASD/preview',
+    date: 'MAY 13, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'A30',
+    pos: 30,
+    title: 'MARTYR',
+    type: 'short',
+    logline: 'In search for his true identity, an orphan suffers the injustice of the dominant culture and initiates a revolution.',
+    genres: [
+      'DRAMA', 'ACTION'
+    ],
+    pdf: 'https://drive.google.com/file/d/1433r5j1JaoXeC0sAFsx4XT64pNJHtbjd/preview',
+    date: 'MAY 07, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'B31',
+    pos: 31,
+    title: 'THE ARC',
+    type: 'short',
+    logline: 'In search for his true identity, an orphan suffers the injustice of the dominant culture and initiates a revolution.',
+    genres: [
+      'SCI-FI', 'DRAMA', 'ACTION'
+    ],
+    pdf: 'https://drive.google.com/file/d/1V-CZwJxGMdgdqqY7combcdZzt7OqtJqr/preview',
+    date: 'APRIL 21, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'C32',
+    pos: 32,
+    title: 'MY HEART WILL GO ON',
+    type: 'short',
+    logline: 'Arriving at a new school, Kate meets Thomas, who shows her that life is an illusion and that the only way to escape is to walk through the door of truth.',
+    genres: [
+      'FANTASY', 'DRAMA', 'ACTION'
+    ],
+    pdf: 'https://drive.google.com/file/d/1LQ9caAFmx_Zmv0LpvnWIYPTRXPHEPQlr/preview',
+    date: 'APRIL 15, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'D33',
+    pos: 33,
+    title: 'FOR THE FUTURE',
+    type: 'short',
+    logline: 'After a nuclear war, a sick woman travels with her family to escape a group of hunters and to give her child a future.',
+    genres: [
+      'DRAMA', 'ACTION'
+    ],
+    pdf: 'https://drive.google.com/file/d/1da6cskbqUXTKXtf9DNjpeqbDZvlDDDJV/preview',
+    date: 'APRIL 10, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  },
+  {
+    id: 'E34',
+    pos: 34,
+    title: 'FOR YOUR RETURN',
+    type: 'short',
+    logline: 'After falling off his boat, a selfish fisherman finds himself alone in the middle of the ocean and realizes everything he\'s left behind.',
+    genres: [
+      'DRAMA', 'ACTION'
+    ],
+    pdf: 'https://drive.google.com/file/d/1Ir2mp9MxahMuX6aAfWmGs1qCZyX5TbzL/preview',
+    date: 'APRIL 04, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
     fade: 1.2,
     tag: 'SCREENPLAYS'
   },
