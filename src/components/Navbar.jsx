@@ -6,6 +6,7 @@ import { EmailNew, LogoInstagram, SendAltFilled, Education, LogoGithub, FaceSati
 import { Sling as Hamburger } from 'hamburger-react'
 import { fadeInSmall } from '../variants'
 import { useState } from 'react'
+import { Keyboard } from '@carbon/icons-react'
 
 export const Navbar = () => {
 
@@ -73,6 +74,9 @@ export const Navbar = () => {
       <div className="hidden sm:flex gap-x-3 sm:gap-x-5 ml-15">
         <Link to={'/about'} >
           <FaceSatisfied className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
+        </Link>
+        <Link to={'/screenwriting'} >
+          <Keyboard className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
         </Link>
         <a href='https://flowcv.com/resume/r76tsuo81b' target='_blank' rel="noreferrer">
           <Education className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />

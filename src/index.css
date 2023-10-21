@@ -39,10 +39,6 @@
   src: url("./fonts/bergen.otf");
 }
 
-html {
-  scrollbar-width: thin;
-}
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -106,4 +102,8 @@ body {
 .glow {
   text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
   0 0 12px #6E00FF, 0 0 92px #6E00FF, 0 0 150px #6E00FF, 0 0 151px #6E00FF;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }

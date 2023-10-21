@@ -15,6 +15,8 @@ import { Navbar } from './components/Navbar'
 import Screenplay from './views/Screenplay'
 import { AboutPost } from './components/about/AboutPost'
 import { Screenwriting } from './views/Screenwriting'
+import { Filmmaking } from './views/Filmmaking'
+import { VideosPost } from './components/video/VideoPost'
 
 const App = () => {
 
@@ -22,6 +24,8 @@ const App = () => {
   const aboutId = matchAbout ? matchAbout.params.id : null
   const matchFilms = useMatch('/films/:id')
   const filmsId = matchFilms ? matchFilms.params.id : null
+  const matchVideos = useMatch('/videos/:id')
+  const videoId = matchVideos ? matchVideos.params.id : null
   const matchBlog = useMatch('/blogs/:id')
   const blogId = matchBlog ? matchBlog.params.id : null
   const matchScript = useMatch('/screenplays/:id')
@@ -40,7 +44,9 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/screenplay" element={<Screenplay />} />
             <Route path="/screenwriting" element={<Screenwriting />} />
+            <Route path="/filmmaking" element={<Filmmaking />} />
             <Route path="/films/:id" element={<FilmsPost filmsId={filmsId} />} />
+            <Route path="/videos/:id" element={<VideosPost videoId={videoId} />} />
             <Route path="/reel/:id" element={<AboutPost aboutId={aboutId} />} />
             <Route path="/blogs/:id" element={<BlogPost blogId={blogId} />} />
             <Route path="/screenplays/:id" element={<ScreenPost screenplayId={screenplayId} />} />

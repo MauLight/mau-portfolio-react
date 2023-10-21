@@ -5,6 +5,8 @@ import inLess_4 from '../img/inLess_4.mp4'
 import inLess_5 from '../img/inLess_5.mp4'
 import inLess_6 from '../img/inLess_6.mp4'
 import inLess_7 from '../img/inLess_7.mp4'
+import inLess_8 from '../img/inLess_8.mp4'
+import inLess_9 from '../img/inLess_9.mp4'
 
 export const blogs = [
   {
@@ -239,9 +241,27 @@ export const inLess = [
   {
     id: 'G7',
     pos: 7,
-    title: 'FINAL FANTASY VII IN LESS THAN 30 MINUTES.',
+    title: 'FINAL FANTASY VII (2009) IN LESS THAN 30 MINUTES.',
     date: 'MAY 16, 2023',
     video: inLess_7,
+    fade: 1.2,
+    tag: 'IN_LESS'
+  },
+  {
+    id: 'H8',
+    pos: 8,
+    title: 'IT FOLLOWS (2014) IN LESS THAN 9 MINUTES.',
+    date: 'SEPTEMBER 15, 2023',
+    video: inLess_8,
+    fade: 1.2,
+    tag: 'IN_LESS'
+  },
+  {
+    id: 'I9',
+    pos: 9,
+    title: 'THE WITCH (2015) IN LESS THAN 12 MINUTES.',
+    date: 'SEPTEMBER 15, 2023',
+    video: inLess_9,
     fade: 1.2,
     tag: 'IN_LESS'
   },
