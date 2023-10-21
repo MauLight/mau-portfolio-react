@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Link as Scroll } from 'react-scroll'
-import { EmailNew, LogoInstagram, SendAltFilled, Education, LogoGithub, FaceSatisfied } from '@carbon/icons-react'
+import { EmailNew, LogoInstagram, SendAltFilled, Education, LogoGithub, FaceSatisfied, VideoFilled } from '@carbon/icons-react'
 import { Sling as Hamburger } from 'hamburger-react'
 import { fadeInSmall } from '../variants'
 import { useState } from 'react'
@@ -77,6 +77,9 @@ export const Navbar = () => {
         </Link>
         <Link to={'/screenwriting'} >
           <Keyboard className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
+        </Link>
+        <Link to={'/filmmaking'} >
+          <VideoFilled className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
         </Link>
         <a href='https://flowcv.com/resume/r76tsuo81b' target='_blank' rel="noreferrer">
           <Education className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
