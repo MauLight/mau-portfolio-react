@@ -31,6 +31,7 @@ import curtain26 from '../img/curtain26.mp4'
 export const videos1 = [
   {
     id: 'a1',
+    pos: 1,
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: despedida,
     title: 'Despedida',
@@ -40,6 +41,7 @@ export const videos1 = [
   },
   {
     id: 'b2',
+    pos: 2,
     image: 'https://i.postimg.cc/SNBgfntW/pic2.png',
     video: retorno,
     title: 'Retorno',
@@ -49,6 +51,7 @@ export const videos1 = [
   },
   {
     id: 'c3',
+    pos: 3,
     image: 'https://i.postimg.cc/NMsJ2ZCS/pic3.png',
     video: teaser,
     title: 'Stardust',
@@ -58,6 +61,7 @@ export const videos1 = [
   },
   {
     id: 'd4',
+    pos: 4,
     image: 'https://i.postimg.cc/DZxCr5tZ/pic4.png',
     video: stardust,
     title: 'Stardust 2',
@@ -67,6 +71,7 @@ export const videos1 = [
   },
   {
     id: 'e5',
+    pos: 5,
     image: 'https://i.postimg.cc/mkhm8CsS/pic5.png',
     video: pig,
     title: 'Cerdo samurai',
@@ -76,6 +81,7 @@ export const videos1 = [
   },
   {
     id: 'f6',
+    pos: 6,
     image: 'https://i.postimg.cc/J4DTXNKr/pic6.png',
     video: end,
     title: 'End of innocence',
@@ -85,6 +91,7 @@ export const videos1 = [
   },
   {
     id: 'g7',
+    pos: 7,
     image: 'https://i.postimg.cc/gjwKvpVS/pic8.png',
     video: jackal,
     title: 'The jackal',
@@ -94,6 +101,7 @@ export const videos1 = [
   },
   {
     id: 'h8',
+    pos: 8,
     image: 'https://i.postimg.cc/mg78XT0K/pic7.png',
     video: entity,
     title: 'Entity',
@@ -103,6 +111,7 @@ export const videos1 = [
   },
   {
     id: 'i9',
+    pos: 9,
     image: 'https://i.postimg.cc/Hsy2npsj/pic9.png',
     video: halcyon,
     title: 'Halcyon',
@@ -115,6 +124,7 @@ export const videos1 = [
 export const videos2 = [
   {
     id: 'a1',
+    pos: 1,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: 'https://res.cloudinary.com/maulight/video/upload/v1694089987/umuz9nskw6brdyyitfwr.mp4',
@@ -124,6 +134,7 @@ export const videos2 = [
   },
   {
     id: 'b2',
+    pos: 2,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: 'https://res.cloudinary.com/maulight/video/upload/v1694090790/rx1f6oim9bm3sb6kcqho.mp4',
@@ -133,6 +144,7 @@ export const videos2 = [
   },
   {
     id: 'c3',
+    pos: 3,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: 'https://res.cloudinary.com/maulight/video/upload/v1694091505/fbxpuxytzdsfcecrqlng.mp4',
@@ -142,6 +154,7 @@ export const videos2 = [
   },
   {
     id: 'd4',
+    pos: 4,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: 'https://res.cloudinary.com/maulight/video/upload/v1697807167/w6t4bwrsoeaovshzv6qx.mp4',
@@ -151,15 +164,17 @@ export const videos2 = [
   },
   {
     id: 'e5',
+    pos: 5,
     orientation: 'vertical',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: time,
     title: 'The end of time',
-    color: 'rgb(251 113 133)',
+    color: 'rgb(30 41 59)',
     genre: 'Music'
   },
   {
     id: 'f6',
+    pos: 6,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: marine,
@@ -169,6 +184,7 @@ export const videos2 = [
   },
   {
     id: 'g7',
+    pos: 7,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: viña,
@@ -178,6 +194,7 @@ export const videos2 = [
   },
   {
     id: 'h8',
+    pos: 8,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: wasit,
@@ -187,6 +204,7 @@ export const videos2 = [
   },
   {
     id: 'i9',
+    pos: 9,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: pitico,
@@ -196,6 +214,7 @@ export const videos2 = [
   },
   {
     id: 'j10',
+    pos: 10,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: aguante,
@@ -205,6 +224,7 @@ export const videos2 = [
   },
   {
     id: 'k11',
+    pos: 11,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: monday,
@@ -214,6 +234,7 @@ export const videos2 = [
   },
   {
     id: 'l12',
+    pos: 12,
     orientation: 'horizontal',
     image: 'https://i.postimg.cc/3rbSWSXf/pic1.png',
     video: forgive,

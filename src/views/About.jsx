@@ -26,6 +26,8 @@ export const About = () => {
     return 1
   }
 
+  const videosArr = videos2.slice(0, 3)
+
   return (
     <>
       <div className='min-h-full pb-20' style={{ backgroundColor: boxColor[ranNum] }} >
@@ -121,7 +123,7 @@ export const About = () => {
           <div className='flex flex-wrap items-center justify-center mt-10 mb-20'>
 
             {
-              videos2.map(elem =>
+              videosArr.map(elem =>
                 <VideoCard
                   key={elem.id}
                   image={elem.image}

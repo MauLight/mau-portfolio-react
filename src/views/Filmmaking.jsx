@@ -12,16 +12,16 @@ import { useState } from 'react'
 const Nav = () => {
   return (
     <nav className='fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50'>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5">
         {/*nav-inner*/}
-        <div className='w-[20px] bg-white/20 h-[200px] backdrop-blur-2x1 rounded-full max-w-[460px] ml-auto px-7 flex flex-col justify-between items-center text-2xl text-white/50' >
+        <div className='w-[20px] bg-white/20 h-[200px] backdrop-blur-2x1 rounded-full max-w-[460px] ml-auto px-7 flex flex-col justify-around sm:justify-between items-center text-2xl text-white/50' >
           <Scroll
             to='features'
             activeClass='active'
             smooth={true}
             spy={true}
             offset={-200}
-            className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
+            className='cursor-pointer w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
           >
             <Aperture className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
           </Scroll>
@@ -31,7 +31,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             offset={0}
-            className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
+            className='cursor-pointer w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
           >
             <Airplay className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
           </Scroll>
@@ -40,7 +40,7 @@ const Nav = () => {
             activeClass='active'
             smooth={true}
             spy={true}
-            className='cursor-pointer w-[25px] min-[450px]:w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
+            className='cursor-pointer w-[60px] h-[25px] min-[450px]:h-[60px] flex items-center justify-center'
           >
             <Voicemail className='hover:text-[#8b5cf6] transition-color duration-300' size={30} />
           </Scroll>
@@ -67,7 +67,7 @@ const FilmCard = ({ video }) => {
           setHover(false)
           setIsHovering(false)
         }}
-        className="flex bg-black gap-x-20 transition-color duration-200 p-10 rounded-[10px] justify-center items-center">
+        className="flex bg-black gap-x-20 transition-color duration-200 p-0 lg:p-10 rounded-[10px] justify-center items-center">
         <motion.div
           variants={fadeInSmall('down', video.fade)}
           initial="hidden"
@@ -105,7 +105,7 @@ const FilmCard2 = ({ video }) => {
       <div
         key={video.id}
         style={{ backgroundColor: '#141314' }}
-        className="flex bg-black gap-x-20 transition-color duration-200 p-10 rounded-[10px] justify-center items-center">
+        className="flex bg-black gap-x-20 transition-color duration-200 p-0 lg:p-10 rounded-[10px] justify-center items-center">
         <motion.div
           variants={fadeInSmall('down', video.fade)}
           initial="hidden"
@@ -145,7 +145,7 @@ const FilmCard3 = ({ video }) => {
       <div
         key={video.id}
         style={{ backgroundColor: '#141314' }}
-        className="flex bg-black gap-x-20 transition-color duration-200 p-10 rounded-[10px] justify-center items-center">
+        className="flex bg-black gap-x-20 transition-color duration-200 p-0 lg:p-10 rounded-[10px] justify-center items-center">
         <motion.div
           variants={fadeInSmall('down', video.fade)}
           initial="hidden"
@@ -179,9 +179,9 @@ const FilmCard3 = ({ video }) => {
 export const Filmmaking = () => {
 
   return (
-    <div className="flex flex-col gap-x-5 gap-y-20 px-5 lg:px-20 bg-black pb-32">
+    <div className="flex flex-col gap-x-5 gap-y-20 px-0 lg:px-20 bg-black pb-32">
 
-      <h1 id='features' className='text-end text-6xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_Filmmaking</h1>
+      <h1 id='features' className='text-end text-5xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_Filmmaking</h1>
 
 
       {
@@ -190,7 +190,7 @@ export const Filmmaking = () => {
         )
         )
       }
-      <h1 id='tvseries' className='text-end text-6xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_VIDEO/Digital</h1>
+      <h1 id='tvseries' className='text-end text-5xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_VIDEO/Digital</h1>
 
       {
 
@@ -200,7 +200,7 @@ export const Filmmaking = () => {
 
         )
       }
-      <h1 id='short' className='text-end text-6xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_web_Content</h1>
+      <h1 id='short' className='text-end text-5xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_web_Content</h1>
       <div className="flex flex-wrap gap-y-10 justify-around lg:justify-between">
 
         {

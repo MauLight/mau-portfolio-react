@@ -5,10 +5,13 @@ import { fadeInSmall } from '../../variants'
 import { Link } from 'react-router-dom'
 
 export const Blog = () => {
+
+  const screenArr = screenplays.slice(0, 3)
+
   return (
     <div className='flex flex-wrap gap-x-3 justify-center items-center py-[30px]  gap-y-10'>
       {
-        screenplays.map(blog => (
+        screenArr.map(blog => (
           <motion.div
             variants={fadeInSmall('down', blog.fade)}
             initial="hidden"
