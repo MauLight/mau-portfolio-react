@@ -816,3 +816,22 @@ export const screenplays = [
     tag: 'SCREENPLAYS'
   },
 ]
+
+export const shortStories = [
+  {
+    id: 'A1',
+    pos: 1,
+    title: 'Goodbye Sister',
+    type: 'short story',
+    logline: 'A young man regrets doubting her sister’s warnings while listening her being taken by otherworldly beings, as he struggles to accept the horrific fate that awaits him.',
+    genres: [
+      'HORROR', 'SUSPENSE'
+    ],
+    pdf: 'https://drive.google.com/file/d/1cPQ2qlSE1CRmQoQOT1GIFF5k1AQvRtpw/preview',
+    date: 'OCTOBER 26, 2023',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SCREENPLAYS'
+  }
+]

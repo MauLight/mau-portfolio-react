@@ -14,9 +14,15 @@ import { Contact } from './components/Contact'
 import { Navbar } from './components/Navbar'
 import Screenplay from './views/Screenplay'
 import { AboutPost } from './components/about/AboutPost'
-import { Screenwriting } from './views/Screenwriting'
+import { Features } from './views/Features'
 import { Filmmaking } from './views/Filmmaking'
 import { VideosPost } from './components/video/VideoPost'
+import { ShortStoryPost } from './components/blog/ShortStoryPost'
+import { Video } from './views/Video'
+import { Web } from './views/Web'
+import { TvSeries } from './views/Tvseries'
+import { ShortFilms } from './views/Shortfilms'
+import { ShortStories } from './views/Shortstories'
 
 const App = () => {
 
@@ -30,6 +36,8 @@ const App = () => {
   const blogId = matchBlog ? matchBlog.params.id : null
   const matchScript = useMatch('/screenplays/:id')
   const screenplayId = matchScript ? matchScript.params.id : null
+  const matchShort = useMatch('/shortstories/:id')
+  const shortId = matchShort ? matchShort.params.id : null
   const matchInLess = useMatch('/inless/:id')
   const inLessId = matchInLess ? matchInLess.params.id : null
 
@@ -43,13 +51,19 @@ const App = () => {
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />
             <Route path="/screenplay" element={<Screenplay />} />
-            <Route path="/screenwriting" element={<Screenwriting />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/tvseries" element={<TvSeries />} />
+            <Route path="/shortfilms" element={<ShortFilms />} />
+            <Route path="/shortstories" element={<ShortStories />} />
             <Route path="/filmmaking" element={<Filmmaking />} />
+            <Route path="/video" element={<Video />} />
+            <Route path="/web" element={<Web />} />
             <Route path="/films/:id" element={<FilmsPost filmsId={filmsId} />} />
             <Route path="/videos/:id" element={<VideosPost videoId={videoId} />} />
             <Route path="/reel/:id" element={<AboutPost aboutId={aboutId} />} />
             <Route path="/blogs/:id" element={<BlogPost blogId={blogId} />} />
             <Route path="/screenplays/:id" element={<ScreenPost screenplayId={screenplayId} />} />
+            <Route path="/shortstories/:id" element={<ShortStoryPost shortId={shortId} />} />
             <Route path="/inless/:id" element={<InLessPost inLessId={inLessId} />} />
           </Routes>
         </ScrollToTop>

@@ -14,6 +14,7 @@
     "@carbon/react": "^1.32.0",
     "@codesweetly/react-youtube-playlist": "^1.0.16",
     "@emailjs/browser": "^3.11.0",
+    "@react-pdf/renderer": "^3.1.14",
     "@react-three/drei": "^9.80.6",
     "@react-three/fiber": "^8.13.7",
     "@sendgrid/mail": "^7.7.0",

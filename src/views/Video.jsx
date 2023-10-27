@@ -1,27 +1,16 @@
 import React from 'react'
-import { videos1 } from '../utils/videos'
+import { videos2 } from '../utils/videos'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { fadeInSmall } from '../variants'
-import { useState } from 'react'
 
-const FilmCard = ({ video }) => {
-
-  // eslint-disable-next-line no-unused-vars
-  const [hover, setHover] = useState(false)
-  const [isHovering, setIsHovering] = useState(false)
+const FilmCard2 = ({ video }) => {
 
   return (
-    <Link key={video.id} to={`/films/${video.id}`}>
+    <Link key={video.id} to={`/videos/${video.id}`}>
       <div
         key={video.id}
-        style={{ backgroundColor: isHovering ? video.color : '#141314' }}
-        onMouseEnter={() => setIsHovering(true)}
-        onClick={() => setHover(true)}
-        onMouseLeave={() => {
-          setHover(false)
-          setIsHovering(false)
-        }}
+        style={{ backgroundColor: '#141314' }}
         className="flex bg-black gap-x-20 transition-color duration-200 p-0 lg:p-10 rounded-[10px] justify-center items-center">
         <motion.div
           variants={fadeInSmall('down', video.fade)}
@@ -33,7 +22,7 @@ const FilmCard = ({ video }) => {
         >
 
           <div className={`${video.rounded} mx-auto w-[100%] lg:w-[40vw] h-full lg:max-h-[70vh] object-contain object-center rounded-[10px] group relative overflow-hidden`}>
-            <img src={video.image} className={'w-full max-h-full object-cover hover:scale-[110%] transition-scale duration-500'} />
+            <video className='w-full h-full object-cover  rounded-[15px]' src={video.video} autoPlay loop muted />
 
           </div>
 
@@ -53,18 +42,19 @@ const FilmCard = ({ video }) => {
   )
 }
 
-export const Filmmaking = () => {
+export const Video = () => {
 
   return (
     <div className="flex flex-col gap-x-5 gap-y-20 px-0 lg:px-20 bg-black pb-32">
 
-      <h1 id='features' className='text-end text-5xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_Filmmaking</h1>
-
+      <h1 id='tvseries' className='text-end text-5xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_VIDEO/Digital</h1>
 
       {
-        videos1.map(video => (
-          <FilmCard key={video.id} video={video} />
+
+        videos2.map(video => (
+          <FilmCard2 key={video.id} video={video} />
         )
+
         )
       }
     </div>
