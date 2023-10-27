@@ -15,7 +15,7 @@ export const Navbar = () => {
   const [cameraIsShown, setCameraIsShown] = useState(false)
 
   return (
-    <div className='flex justify-between items-center px-2 sm:px-20 py-7 border-b-2 border-white'>
+    <div className='flex justify-between items-center px-2 sm:px-20 py-7 border-b-2 z-40 border-white'>
       <Link to={'/'} >
         <div className='flex w-[40px] gap-x-3 items-center justify-center'>
           <img className='w-[40px] h-[40px]' src='https://i.postimg.cc/rsbQbsy2/icon.png' />
@@ -30,7 +30,7 @@ export const Navbar = () => {
         <div onMouseEnter={() => setKeyIsShown(true)} onMouseLeave={() => setKeyIsShown(false)}>
           <Keyboard className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
           {
-            keyIsShown && <div className='w-[200px] px-3 py-5 absolute z-1 bg-white'>
+            keyIsShown && <div className='w-[200px] px-3 py-5 absolute z-40 bg-white'>
               <ul className='flex flex-col gap-y-1'>
                 <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/features'}>Features</Link>
@@ -51,7 +51,7 @@ export const Navbar = () => {
         <div onMouseEnter={() => setCameraIsShown(true)} onMouseLeave={() => setCameraIsShown(false)}>
           <VideoFilled className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
           {
-            cameraIsShown && <div className='w-[200px]  px-3 py-5 absolute z-1 bg-white'>
+            cameraIsShown && <div className='w-[200px]  px-3 py-5 absolute z-40 bg-white'>
               <ul className='flex flex-col gap-y-1'>
                 <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/filmmaking'}>Filmmaking</Link>

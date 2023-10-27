@@ -8,7 +8,7 @@ import { fadeIn } from '../variants'
 function Home_Hero() {
 
   return (
-    <div className='h-screen' id='home'>
+    <div className='h-screen z-1' id='home'>
       <div className='flex h-[100%] box-border overflow-hidden'>
         <div className="w-[100vw] box-border overflow-hidden h-screen absolute z-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-90"></div>
         <video
