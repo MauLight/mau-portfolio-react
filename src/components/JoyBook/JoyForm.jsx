@@ -31,7 +31,7 @@ export const JoyForm = ({ setToken, setError, setSigned }) => {
 
   return (
     <>
-      <div className="flex justify-center items-center flex-col gap-y-2 h-[700px] px-10 min-[200px]:max-[1200px]:bg-site">
+      <div className="flex justify-center items-center flex-col gap-y-2 h-screen bg-gradient-to-l from-violet-500 to-fuchsia-500 px-10 min-[200px]:max-[1200px]:bg-site">
         <div className='w-[300px] flex justify-center items-center mb-2'>
           <motion.h1
             whileHover={{ scale: 1.1 }}

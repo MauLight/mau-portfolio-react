@@ -229,9 +229,9 @@ function TicTac() {
   return (
     <div
       id='tictac'
-      className="h-[500px] sm:h-[700px] border-y-2 relative"
+      className="h-[500px] sm:h-screen border-t-2 border-white relative"
       style={{ backgroundImage: `url(${bg_site})` }}>
-      <div className="w-[100vw] box-border overflow-hidden h-[500px] sm:h-[700px] absolute z-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-95"></div>
+      <div className="w-[100vw] box-border overflow-hidden h-screen absolute z-0 bg-[#10100e] opacity-95"></div>
       <div className="Game absolute z-0 left-[21%] min-[500px]:left-[20%] md:left-[15%] top-[15%]">
         <div className="min-[200px]:max-md:flex-col flex xl:gap-x-[200px]">
           <div className='board w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] xl:w-[500px] xl:h-[500px] bg-black border border-black flex flex-col justify-center items-center rounded-md mr-20'>
@@ -253,10 +253,10 @@ function TicTac() {
             </div>
 
           </div>
-          <div className='board flex flex-col min-[200px]:max-lg:mt-10 w-screen md:w-[500px] md:mt-[200px]'>
-            <h1 className='font-kunika text-5xl md:text-7xl text-black'>{title}</h1>
+          <div className=' flex flex-col min-[200px]:max-lg:mt-10 w-screen md:w-[500px] md:mt-[200px]'>
+            <h1 className='font-kunika text-5xl md:text-7xl text-white'>{title}</h1>
 
-            <h1 className='font-carbon text-md md:text-2xl'>
+            <h1 className='font-carbon text-md text-[#464648] md:text-2xl'>
 
               <TypeAnimation sequence={[
                 'Start new game by pressing a block_', 3000,

@@ -10,7 +10,7 @@ function Home_Hero() {
   return (
     <div className='h-screen z-1' id='home'>
       <div className='flex h-[100%] box-border overflow-hidden'>
-        <div className="w-[100vw] box-border overflow-hidden h-screen absolute z-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-90"></div>
+        <div className="w-[100vw] box-border overflow-hidden h-screen absolute z-0 bg-[#10100e] opacity-90"></div>
         <video
           src={hero_video}
           type='video/mp4'
@@ -29,7 +29,7 @@ function Home_Hero() {
           viewport={{ once: false, amount: 0.7 }}
           className="absolute top-[42%] left-[5%]"
         >
-          <h1 className='text-white font-carbon text-lg sm:text-2xl md:text-4xl'>Hi there!</h1>
+          <h1 className='text-[#464648] font-carbon text-lg sm:text-2xl md:text-4xl'>Hi there!</h1>
         </motion.div>
         <motion.div
           variants={fadeIn('up', 0.5)}
@@ -47,7 +47,7 @@ function Home_Hero() {
           viewport={{ once: false, amount: 0.7 }}
           className="absolute top-[57%] min-[450px]:top-[64%] left-[12%] min-[450px]:left-[46%]"
         >
-          <h1 className='text-black font-carbon text-2xl md:text-3xl' >{'I am a '}<b>
+          <h1 className='text-white font-carbon text-2xl md:text-3xl' >{'I am a '}<b>
             <TypeAnimation sequence={[
               'software developer_', 2000,
               'visual designer_', 2000,

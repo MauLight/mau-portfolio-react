@@ -15,7 +15,7 @@ export const Navbar = () => {
   const [cameraIsShown, setCameraIsShown] = useState(false)
 
   return (
-    <div className='flex justify-between items-center px-2 sm:px-20 py-7 border-b-2 z-40 border-white'>
+    <div className='flex justify-between items-center bg-[#10100e] px-2 sm:px-20 py-2 border-b border-[#464648] z-40'>
       <Link to={'/'} >
         <div className='flex w-[40px] gap-x-3 items-center justify-center'>
           <img className='w-[40px] h-[40px]' src='https://i.postimg.cc/rsbQbsy2/icon.png' />

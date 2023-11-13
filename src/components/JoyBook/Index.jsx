@@ -77,7 +77,7 @@ export const JoyBookIndex = () => {
   }
 
   return (
-    <div id='joybook' className={'min-[1200px]:flex justify-center items-center border-y-2 relative'}>
+    <div id='joybook' className={'min-[1200px]:flex justify-center bg-gradient-to-r from-violet-500 to-fuchsia-500 items-center border-y-2 relative'}>
       <div className="absolute top-[10%] z-40">
         <Notification errorMessage={errorMessage} type={type} />
       </div>

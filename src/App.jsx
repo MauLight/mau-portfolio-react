@@ -43,7 +43,7 @@ const App = () => {
 
   return (
 
-    <div className="App w-screen box-border overflow-hidden min-h-screen bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <div className="App w-screen box-border overflow-hidden min-h-screen bg-[#10100e]">
       <ParallaxProvider>
         <Navbar />
         <ScrollToTop>

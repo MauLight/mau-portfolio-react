@@ -832,6 +832,22 @@ export const shortStories = [
     rounded: 'rounded-l-full',
     img: '',
     fade: 1.2,
-    tag: 'SCREENPLAYS'
-  }
+    tag: 'SHORT_STORIES'
+  },
+  {
+    id: 'B2',
+    pos: 2,
+    title: 'Spider',
+    type: 'short story',
+    logline: 'Victor goes for a drive with his girlfriend Lucia and wants to tell her something he doesn\'t dare to say, and there\'s a spider living in the car.',
+    genres: [
+      'DRAMA', 'COMEDY'
+    ],
+    pdf: 'https://drive.google.com/file/d/1S1AB7mvv5VyoEb0owcvB7odEzRoXYmHf/preview',
+    date: 'MARCH 03, 2021',
+    rounded: 'rounded-l-full',
+    img: '',
+    fade: 1.2,
+    tag: 'SHORT_STORIES'
+  },
 ]

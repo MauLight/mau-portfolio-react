@@ -31,7 +31,7 @@ function Quest() {
 
   return (
 
-    <section id='quest' className="px-2 xl:px-20 min-h-[700px] flex flex-col justify-center items-center pt-10 pb-20">
+    <section id='quest' className="px-2 xl:px-20 min-h-screen flex flex-col justify-center items-center pt-10 pb-20">
       <div className="mb-10 flex flex-col justify-center items-center">
         <h1 className="font-primary text-2xl sm:text-5xl">{'SCREENWRITERS\' QUEST'}</h1>
         <p className='font-carbon'>Your next screenplay starts here.</p>

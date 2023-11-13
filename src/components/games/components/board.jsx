@@ -308,10 +308,10 @@ export const Board = (props) => {
     >
       <div className="absolute z-40 left-[1%] title my-3">
         <div className="flex flex-col justify-center items-center w-screen">
-          <h1 className='font-kunika text-6xl text-black'>{info}</h1>
+          <h1 className='font-kunika text-6xl text-white'>{info}</h1>
           <div className="board-users flex gap-x-24 justify-center">
-            <h4 className='font-carbon text-2xl'>Your Board</h4>
-            <h4 className='font-carbon text-2xl'>AI Board</h4>
+            <h4 className='font-carbon text-2xl text-[#464648]'>Your Board</h4>
+            <h4 className='font-carbon text-2xl text-[#464648]'>AI Board</h4>
           </div>
         </div>
       </div>
