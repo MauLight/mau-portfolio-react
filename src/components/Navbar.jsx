@@ -50,7 +50,7 @@ export const Navbar = () => {
           }
         </div>
         <div onMouseEnter={() => setCameraIsShown(true)} onMouseLeave={() => setCameraIsShown(false)}>
-          <VideoFilled className='hover:text-white transition-color duration-300' size={20} />
+          <VideoFilled className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
           {
             cameraIsShown && <div className='w-[200px]  px-3 py-5 absolute z-40 bg-[#10100e]'>
               <ul className='flex flex-col gap-y-1'>

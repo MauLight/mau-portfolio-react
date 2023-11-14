@@ -11,24 +11,24 @@ const FilmCard2 = ({ video }) => {
       <div
         key={video.id}
         style={{ backgroundColor: 'black' }}
-        className="flex bg-black gap-x-20 transition-color duration-200 p-0 lg:p-10 rounded-[10px] justify-center items-center">
+        className="flex bg-black gap-x-20 transition-color duration-200 p-0 rounded-[10px] justify-start items-center">
         <motion.div
           variants={fadeInSmall('down', video.fade)}
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: true, amount: 0.3 }}
 
-          className="flex flex-col w-full lg:w-[40vw] min-[200px]:max-sm:px-2 my-5"
+          className="flex flex-col w-full lg:w-[40vw] min-[200px]:max-sm:px-2"
         >
 
-          <div className={`${video.rounded} mx-auto w-[100%] lg:w-[40vw] h-full lg:max-h-[70vh] object-contain object-center rounded-[10px] group relative overflow-hidden`}>
-            <video className='w-full h-full object-cover  rounded-[15px]' src={video.video} autoPlay loop muted />
+          <div className={'mx-auto w-[100%] lg:w-[40vw] h-full lg:max-h-[70vh] object-contain object-center group relative overflow-hidden'}>
+            <video className='w-full h-full object-cover rounded-l-[10px]' src={video.video} autoPlay loop muted />
 
           </div>
 
         </motion.div>
         <div className="hidden lg:flex flex-col justify-center">
-          <h1 className='blog-item font-primary min-[200px]:max-sm:mt-3 text-xl md:text-8xl uppercase'>{video.title}</h1>
+          <h1 className='font-primary min-[200px]:max-sm:mt-3 text-xl md:text-8xl uppercase'>{video.title}</h1>
           <div className="hidden sm:flex justify-start gap-x-2 my-5">
             <p className='font-carbon text-sm'>{video.date}</p>
             <div className="border rounded-full px-5">

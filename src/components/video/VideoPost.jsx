@@ -75,14 +75,14 @@ export const VideosPost = ({ videoId }) => {
                 onClick={handlePrev}
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-                className={!disablePrev ? 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-[#393939] hover:bg-white hover:text-[#9f56f4] active:bg-[#9f56f4] active:text-white transition-color duration-300' : 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-white text-gray-200'}
+                className={!disablePrev ? 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-[#393939] hover:bg-white hover:text-[#10100e] active:bg-[#10100e] active:text-white transition-color duration-300' : 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-white text-gray-200'}
               >previous</motion.button>
               <div className="flex w-[40%] sm:w-[80%] border-b-4 border-black mb-[7px]"></div>
               <motion.button
                 onClick={handleNext}
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-                className={!disableNext ? 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-[#393939] hover:bg-white hover:text-[#9f56f4] active:bg-[#9f56f4] active:text-white transition-color duration-300' : 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-white text-gray-200'}
+                className={!disableNext ? 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-[#10100e] hover:bg-white hover:text-[#10100e] active:bg-[#10100e] active:text-white transition-color duration-300' : 'font-carbon text-[12px] border-2 p-5 rounded-full w-[90px] h-[90px] bg-white text-gray-200'}
               >next</motion.button>
             </div>
           </div>
