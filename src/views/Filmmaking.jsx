@@ -15,7 +15,7 @@ const FilmCard = ({ video }) => {
     <Link key={video.id} to={`/films/${video.id}`}>
       <div
         key={video.id}
-        style={{ backgroundColor: isHovering ? video.color : '#141314' }}
+        style={{ backgroundColor: isHovering ? video.color : 'black' }}
         onMouseEnter={() => setIsHovering(true)}
         onClick={() => setHover(true)}
         onMouseLeave={() => {
@@ -56,7 +56,7 @@ const FilmCard = ({ video }) => {
 export const Filmmaking = () => {
 
   return (
-    <div className="flex flex-col gap-x-5 gap-y-20 px-0 lg:px-20 bg-black pb-32">
+    <div className="flex flex-col gap-x-5 gap-y-20 px-0 lg:px-20 bg-[#10100e] pb-32">
 
       <h1 id='features' className='text-end text-5xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_Filmmaking</h1>
 

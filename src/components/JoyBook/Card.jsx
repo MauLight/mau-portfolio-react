@@ -46,9 +46,9 @@ export const Card = ({ id, title, author, img, body, likes, tags, lorem, setErro
       variants={fadeInSmall('left', 0.2)}
       initial="hidden"
       whileInView={'show'}
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: true, amount: 0.7 }}
       key={id}
-      className='min-w-[99vw] lg:min-w-[35vw] h-[606px] object-contain object-center overflow-hidden text-black bg-white rounded-r-[15px] px-5 py-10'
+      className='min-w-[99vw] lg:min-w-[35vw] h-screen object-contain object-center overflow-hidden text-black bg-white border-r border-black px-5 py-10'
     >
       <h1 className='font-carbon text-2xl lg:text-4xl mb-4'>{title}</h1>
       <div className="flex">

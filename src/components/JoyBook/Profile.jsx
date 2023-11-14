@@ -172,7 +172,7 @@ export const Profile = ({ setError, setType, setToken }) => {
   }
 
   return (
-    <div className="flex justify-center items-center flex-col min-[1200px]:min-w-[499px] min-[200px]:max-[1200px]:mt-10 h-[606px] text-black bg-white rounded-l-[15px] px-5 py-10 mb-2 min-[1200px]:ml-3 relative">
+    <div className="flex justify-center items-center flex-col min-[1200px]:min-w-[499px] min-[200px]:max-[1200px]:mt-10 h-screen text-black bg-white rounded-l-[15px] px-5 py-10  min-[1200px]:ml-3 relative">
       <div className='absolute top-[7%] left-[84%] h-[100px] w-[100px] z-40'>
         <motion.div
           variants={fadeInSmall('down', 0.1)}

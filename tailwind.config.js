@@ -17,7 +17,7 @@ module.exports = {
         aston: ['ASTON', 'sans-serif'],
         kunika: ['KUNIKA', 'sans-serif'],
         disolve: ['DISOLVE', 'sans-serif'],
-        bergen: ['BERGEN', 'sans-serif'],
+        questival: ['QUESTIVAL', 'sans-serif'],
       }
     },
   },

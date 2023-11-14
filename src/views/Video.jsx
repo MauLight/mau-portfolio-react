@@ -10,7 +10,7 @@ const FilmCard2 = ({ video }) => {
     <Link key={video.id} to={`/videos/${video.id}`}>
       <div
         key={video.id}
-        style={{ backgroundColor: '#141314' }}
+        style={{ backgroundColor: 'black' }}
         className="flex bg-black gap-x-20 transition-color duration-200 p-0 lg:p-10 rounded-[10px] justify-center items-center">
         <motion.div
           variants={fadeInSmall('down', video.fade)}
@@ -45,7 +45,7 @@ const FilmCard2 = ({ video }) => {
 export const Video = () => {
 
   return (
-    <div className="flex flex-col gap-x-5 gap-y-20 px-0 lg:px-20 bg-black pb-32">
+    <div className="flex flex-col gap-x-5 gap-y-20 px-0 lg:px-20 bg-[#10100e] pb-32">
 
       <h1 id='tvseries' className='text-end text-5xl sm:text-8xl lg:text-[144px] 2xl:text-[192px] mt-20 mb-10 uppercase'>_VIDEO/Digital</h1>
 

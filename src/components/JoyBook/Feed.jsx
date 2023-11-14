@@ -7,7 +7,7 @@ export const Feed = ({ data, setError }) => {
   const allPosts = posts.concat(data).reverse()
 
   return (
-    <div className="pics flex w-[100%] h-[696px] items-center min-[200px]:max-xl:justify-center gap-x-3">
+    <div className="pics flex w-[100%] h-screen items-center min-[200px]:max-xl:justify-center items-center scrollbar-none">
       {
         allPosts.map(post => <Card
           key={post.id}

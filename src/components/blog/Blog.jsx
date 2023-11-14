@@ -16,7 +16,7 @@ export const Blog = () => {
             variants={fadeInSmall('down', blog.fade)}
             initial="hidden"
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             key={blog.id}
             className="flex flex-col w-screen md:w-[30vw] min-[200px]:max-sm:px-2 my-5"
           >
@@ -42,7 +42,7 @@ export const Blog = () => {
             variants={fadeInSmall('right', blog.fade)}
             initial="hidden"
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             key={blog.id}
             className="flex flex-col w-screen md:w-[30vw] min-[200px]:max-sm:px-2 my-5"
           >
@@ -67,7 +67,7 @@ export const Blog = () => {
             variants={fadeInSmall('left', blog.fade)}
             initial="hidden"
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             key={blog.id}
             className="flex flex-col w-screen md:w-[30vw] min-[200px]:max-sm:px-2 my-5"
           >

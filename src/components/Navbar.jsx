@@ -23,25 +23,26 @@ export const Navbar = () => {
         </div>
       </Link>
 
-      <div className="hidden sm:flex gap-x-3 sm:gap-x-5 ml-15">
+      <div className="hidden sm:flex gap-x-3 sm:gap-x-5 ml-15 justify-center items-center">
+        <a href='https://screenwriters.quest/' className='text-white hover:text-[#8b5cf6] text-xl font-questival uppercase hover:scale-105 active:scale-100 transition-all duration-200 uppercase'>Questival</a>
         <Link to={'/about'}>
           <FaceSatisfied className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
         </Link>
         <div onMouseEnter={() => setKeyIsShown(true)} onMouseLeave={() => setKeyIsShown(false)}>
           <Keyboard className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
           {
-            keyIsShown && <div className='w-[200px] px-3 py-5 absolute z-40 bg-white'>
+            keyIsShown && <div className='w-[200px] px-3 py-5 absolute z-40 bg-[#10100e]'>
               <ul className='flex flex-col gap-y-1'>
-                <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/features'}>Features</Link>
                 </li>
-                <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/tvseries'}>TV Series</Link>
                 </li>
-                <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/shortfilms'}>Short Films</Link>
                 </li>
-                <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/shortstories'}>Short Stories</Link>
                 </li>
               </ul>
@@ -49,17 +50,17 @@ export const Navbar = () => {
           }
         </div>
         <div onMouseEnter={() => setCameraIsShown(true)} onMouseLeave={() => setCameraIsShown(false)}>
-          <VideoFilled className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
+          <VideoFilled className='hover:text-white transition-color duration-300' size={20} />
           {
-            cameraIsShown && <div className='w-[200px]  px-3 py-5 absolute z-40 bg-white'>
+            cameraIsShown && <div className='w-[200px]  px-3 py-5 absolute z-40 bg-[#10100e]'>
               <ul className='flex flex-col gap-y-1'>
-                <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/filmmaking'}>Filmmaking</Link>
                 </li>
-                <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/video'}>Video/Digital</Link>
                 </li>
-                <li className='blog-item text-black text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
                   <Link to={'/web'}>Web Content</Link>
                 </li>
               </ul>
@@ -96,15 +97,48 @@ export const Navbar = () => {
           whileInView={menu}
           viewport={{ once: false, amount: 0.7 }}
           className="flex gap-x-2 sm:gap-x-5 mt-4 mr-3">
-          <Link to={'/about'} >
+          <Link to={'/about'}>
             <FaceSatisfied className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
           </Link>
-          <Link to={'/screenwriting'} >
+          <div onMouseEnter={() => setKeyIsShown(true)} onMouseLeave={() => setKeyIsShown(false)}>
             <Keyboard className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
-          </Link>
-          <Link to={'/filmmaking'} >
-            <VideoFilled className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
-          </Link>
+            {
+              keyIsShown && <div className='w-[200px] px-3 py-5 absolute z-40 bg-[#10100e]'>
+                <ul className='flex flex-col gap-y-1'>
+                  <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                    <Link to={'/features'}>Features</Link>
+                  </li>
+                  <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                    <Link to={'/tvseries'}>TV Series</Link>
+                  </li>
+                  <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                    <Link to={'/shortfilms'}>Short Films</Link>
+                  </li>
+                  <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                    <Link to={'/shortstories'}>Short Stories</Link>
+                  </li>
+                </ul>
+              </div>
+            }
+          </div>
+          <div onMouseEnter={() => setCameraIsShown(true)} onMouseLeave={() => setCameraIsShown(false)}>
+            <VideoFilled className='hover:text-white transition-color duration-300' size={20} />
+            {
+              cameraIsShown && <div className='w-[200px]  px-3 py-5 absolute z-40 bg-[#10100e]'>
+                <ul className='flex flex-col gap-y-1'>
+                  <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                    <Link to={'/filmmaking'}>Filmmaking</Link>
+                  </li>
+                  <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                    <Link to={'/video'}>Video/Digital</Link>
+                  </li>
+                  <li className='text-[#464648] hover:text-white text-xl font-primary uppercase hover:scale-105 active:scale-100 transition-all duration-200'>
+                    <Link to={'/web'}>Web Content</Link>
+                  </li>
+                </ul>
+              </div>
+            }
+          </div>
           <a href='https://flowcv.com/resume/r76tsuo81b' target='_blank' rel="noreferrer">
             <Education className='hover:text-[#8b5cf6] transition-color duration-300' size={20} />
           </a>
